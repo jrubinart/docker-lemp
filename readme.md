@@ -1,7 +1,7 @@
 # DOCKER LEMP
 - Nginx
 - PHP 7.2-fpm
-- MySQL
+- MariaDB
 - PHPMyAdmin
 - Maildev
 
