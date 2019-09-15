@@ -3,7 +3,6 @@
 - PHP 7.2-fpm
 - MariaDB
 - PHPMyAdmin
-- Maildev
 
 ## :rocket: Quickstart 
 - Install and launch Docker  
