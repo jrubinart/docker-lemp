@@ -21,7 +21,7 @@ services:
     mysql:
         image: mariadb:10.4.7-bionic
         environment:
-            - MYSQL_ROOT_PASSWORD=Patata84
+            - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
             - MYSQL_DATABASE=${DB_NAME}
             - MYSQL_USER=${DB_USER}
             - MYSQL_PASSWORD=${DB_PASSWORD}
