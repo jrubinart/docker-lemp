@@ -2,7 +2,7 @@ version: '3'
 services:
 
     php:
-        image: atillay/lemp-php
+        image: jrubinart/lemp-php
         env_file:
             - .env
         volumes:
@@ -10,13 +10,13 @@ services:
             - .:/var/www
 
     nginx:
-        image: atillay/lemp-nginx
+        image: jrubinart/lemp-nginx
         ports:
             - ${SERVER_PORT}:80
         volumes:
             - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
             - ./log:/var/log/nginx
-            - ./public:/var/www/public
+            - ./www/public:/var/www/public
 
     mysql:
         image: mariadb:10.4.7-bionic
