@@ -7,7 +7,7 @@ services:
             - .env
         volumes:
             - ./docker/php/php.ini:/usr/local/etc/php/php.ini
-            - .:/var/www
+            - ./www/public:/var/www/public
 
     nginx:
         image: atillay/lemp-nginx
